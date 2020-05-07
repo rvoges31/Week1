@@ -10,23 +10,24 @@
         h2 {
             text-align: left;
             color: blue;
+            margin-left: 10px;
 
         }
        /*Creat three equal columns that float next to each other */
+       .row {
+           display: table;
+           width: 100%;
+       }
        .column {
-           float: left;
-           width: 33.33%;
+           display: table-cell;
+            padding: 10px;
            background-color: lightskyblue;
        }
-       /*Clear floats after the columns */
-       .row:after {
-           content: "";
-           display: table;
-           clear: both;
-       }
+     
        img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 90%;
+        max-height: 90%;
+       margin-left: 3.33%;
         display: block; /* remove extra space below image */
         }
     </style>
@@ -42,9 +43,7 @@
             <br>
         </div>
 
-        <div class="column" >
-            <br>
-            <br>
+        <div class="column" style="text-align: left;">
             <p>This is a short introduction about myself written using the paragraph form. I enjoy sailing, motorbike riding, and drinking Scotch.</p>
         </div>
 
