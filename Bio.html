@@ -1,59 +1,39 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <title>Student Bio - R Voges</title>
-    <style>
-        h1 {
-            text-align: center;
-            background-color: gray;
-            font-style: unset;
-        }
-        h2 {
-            text-align: left;
-            color: blue;
-            margin-left: 10px;
-
-        }
-       /*Creat three equal columns that float next to each other */
-       .row {
-           display: table;
-           width: 100%;
-       }
-       .column {
-           display: table-cell;
-            padding: 10px;
-           background-color: lightskyblue;
-       }
-     
-       img {
-        max-width: 90%;
-        max-height: 90%;
-       margin-left: 3.33%;
-        display: block; /* remove extra space below image */
-        }
-    </style>
+    <!--This link links the html to the css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    
+    <header>
     <h1>Student Bio</h1>
-    <!--First column-->
-    <div class="row">
-        <div class="column">
+    </header>
+  
+    <div class="container">
+        <section id="main-bio">
+
             <h2>Ryan Voges</h2>
-            <img src="Profile.JPG" alt="R Voges Profile">
-            <br>
-        </div>
 
-        <div class="column" style="text-align: left;">
-            <p>This is a short introduction about myself written using the paragraph form. I enjoy sailing, motorbike riding, and drinking Scotch.</p>
-        </div>
+            <img id="bio-image" src="Profile.JPG" alt="R Voges Profile">
 
-        <div class="column">
+            <p>This is a short introduction about myself written using the paragraph form. I enjoy sailing, motorbike riding, and drinking Scotch.</p>       
+
+        </section>
+        <section id="contact-info">
+
             <h3>Contact Info</h3>
+
             <ul>
                 <li><b>Email: </b><a href="mailto:rvoges@iinet.net.au" target="_blank">rvoges@iinet.net.au</a></li>
                 <li><b>GitHub: </b><a href="https://github.com/rvoges31" target="_blank">Ryan Voges</a></li>
                 <li><b>Portfolio: </b><a href="#">Coming Soon</a></li>
               </ul>
-        </div>
+
+        </section>
     </div>
+    
+    
+
 </body>
